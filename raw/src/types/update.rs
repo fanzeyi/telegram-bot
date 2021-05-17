@@ -39,6 +39,8 @@ pub enum UpdateKind {
     /// A user changed their answer in a non-anonymous poll. Bots receive new votes only in polls that were sent by the bot itself
     #[serde(rename = "poll_answer")]
     PollAnswer(PollAnswer),
+    #[serde(rename = "my_chat_member")]
+    MyChatMember(MyChatMember),
     #[doc(hidden)]
     Error(String),
     #[doc(hidden)]
